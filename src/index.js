@@ -1,4 +1,5 @@
 import HomeTab from "./home-tab";
+import Logo from './restaurant-logo.jpg';
 
 import './reset.css';
 import './style.css';

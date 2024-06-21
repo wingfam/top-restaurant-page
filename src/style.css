@@ -1,7 +1,56 @@
+:root {
+    --background-black: #181a1b;
+    --hover-background-black: #1b1d1e;
+    --text-color-beige: #c2a072;
+    --logo-image: url("./restaurant-logo.jpg");
+}
+
 body {
     margin: unset;
     height: 100%;
     width: 100%;
     overflow: scroll;
     position: relative;
+    display: flex;
+}
+
+header {
+    max-width: 243px;
+    padding: 15px 30px 45px 30px;
+    background: var(--background-black);
+}
+
+header nav {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav button {
+    cursor: pointer;
+    min-width: 166px;
+    min-height: 54px;
+    border: 0px;
+    background: #181a1b;
+    color: var(--text-color-beige);
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+header nav button:hover {
+    background: var(--hover-background-black);
+}
+
+header nav::before {
+    content: "";
+    background-image: var(--logo-image);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
 }
