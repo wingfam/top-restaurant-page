@@ -7,7 +7,7 @@
 
 html, body {
     margin: unset;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     position: relative;
     display: flex;
@@ -21,7 +21,6 @@ header {
     max-width: 243px;
     height: 100%;
     background: var(--background-black);
-    position: fixed;
 }
 
 header nav {
@@ -57,7 +56,6 @@ header .logo-img {
 }
 
 #content {
-    margin-left: 243px;
     width: 100%;
 }
 
@@ -89,7 +87,7 @@ header .logo-img {
 .home-tab .extra-info {
     display: flex;
     justify-content: center;
-    width: 100%;
+    gap: 2em;
 }
 
 .home-tab .extra-info .working-hrs,
