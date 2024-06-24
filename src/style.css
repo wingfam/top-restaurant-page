@@ -52,11 +52,6 @@ body {
         background: var(--hover-background-black);
     }
 
-    header .logo-img {
-        object-fit: contain;
-        width: 100%;
-    }
-
     #content {
         width: 100%;
         font-size: 18px;
@@ -125,12 +120,9 @@ body {
     header {
         width: 100%;
         height: 50px;
+        background: #26292b;
         display: flex;
         justify-content: start;
-    }
-
-    header .logo-img {
-        width: 20%;
     }
 
     #content {
