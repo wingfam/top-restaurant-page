@@ -31,6 +31,7 @@ const ContactForm = function() {
     labelEmail.textContent = "Email: ";
     labelPhone.textContent = "Phone: ";
     labelMessage.textContent = "Message: ";
+    buttonSubmit.textContent = "Submit";
 
     form.appendChild(labelName);
     form.appendChild(inputName);
@@ -49,27 +50,33 @@ const ContactTab = function () {
   const contactTab = document.createElement("div");
   const titleTab = document.createElement("h1");
   const message = document.createElement("p");
-  const email = document.createElement("a");
-  const phone = document.createElement("a");
+  const emailText = document.createElement("p");
+  const emailLink = document.createElement("a");
+  const phoneText = document.createElement("p");
+  const phoneLink = document.createElement("a");
 
   contactTab.classList.add("contact-tab");
   titleTab.classList.add("title");
   message.classList.add("message");
-  email.classList.add("email");
-  phone.classList.add("phone");
+  emailText.classList.add("email");
+  phoneText.classList.add("phone");
 
-  email.setAttribute("href", "mailto:contact@vietnoodle.com");
-  phone.setAttribute("href", "tel:123-456-7890");
+  emailLink.setAttribute("href", "mailto:contact@vietnoodle.com");
+  phoneLink.setAttribute("href", "tel:123-456-7890");
 
   titleTab.textContent = "Contact Us";
   message.textContent = `If you have any questions, feel free to reach out to us via email or phone, or use the contact form below.`;
-  email.textContent = "contact@vietnoodle.com";
-  phone.textContent = "(123)456-7890";
+  emailText.textContent = "Email: ";
+  phoneText.textContent = "Phone: ";
+  emailLink.textContent = "contact@vietnoodle.com";
+  phoneLink.textContent = "(123)456-7890";
 
+  emailText.appendChild(emailLink);
+  phoneText.appendChild(phoneLink);
   contactTab.appendChild(titleTab);
   contactTab.appendChild(message);
-  contactTab.appendChild(email);
-  contactTab.appendChild(phone);
+  contactTab.appendChild(emailText);
+  contactTab.appendChild(phoneText);
   contactTab.appendChild(ContactForm());
 
   return contactTab;

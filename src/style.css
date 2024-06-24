@@ -242,4 +242,59 @@ body {
     .menu-tab .card-wrapper .main-info .price::after {
         content: " VND";
     }
+
+    /* CONTACT TAB */
+
+    .contact-tab {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .contact-tab .title {
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 64px;
+    }
+
+    .contact-tab .message {
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .contact-tab .email a,
+    .contact-tab .phone a {
+        color: var(--text-color-beige);
+    }
+
+    .contact-tab .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: .5em;
+        width: 350px;
+    }
+
+    .contact-tab .contact-form input,
+    .contact-tab .contact-form textarea {
+        width: 90%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    .contact-tab .contact-form textarea {
+        height: 60px;
+    }
+
+    .contact-tab .contact-form .btn-submit {
+        width: 100px;
+        height: 30px;
+        font-size: 18px;
+        color:#181a1b;
+        margin: 0 auto;
+    }
 }
