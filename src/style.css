@@ -115,3 +115,69 @@ body {
         line-height: 20px;
     }
 }
+
+@media screen and (max-width: 799px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: start;
+    }
+
+    header .logo-img {
+        width: 20%;
+    }
+
+    #content {
+        padding: 20px 30px 45px 30px;
+        text-align: center;
+    }
+
+    .home-tab .home-image {
+        width: 60%;
+        height: 60%;
+        margin-bottom: 10px;
+    }
+
+    .home-tab .text-box {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .home-tab .text-box h2 {
+        font-size: 32px;
+    }
+
+    .home-tab .extra-info {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .home-tab .extra-info .working-hrs,
+    .home-tab .extra-info .address-text {
+        width: 250px;
+        text-align: center;
+    }
+
+    .home-tab .extra-info h4 {
+        line-height: 46px;
+        font-weight: 700;
+    }
+
+    .home-tab .text-box,
+    .home-tab .extra-info {
+        padding: 0px 80px;
+    }
+
+    .home-tab .extra-info p {
+        line-height: 20px;
+    }
+}
