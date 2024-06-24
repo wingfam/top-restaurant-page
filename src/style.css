@@ -202,6 +202,12 @@ body {
 
     /* MENU TAB */
 
+    .menu-tab .tab-title {
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 64px;
+    }
+
     .menu-tab .card-wrapper {
         display: flex;
         align-items: start;

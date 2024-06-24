@@ -31,13 +31,18 @@ const FoodInfoCard = function (object) {
 
 const MenuTab = function () {
   const menuTab = document.createElement("div");
+  const tabTitle = document.createElement("h1");
 
   menuTab.classList.add("menu-tab");
+  tabTitle.classList.add("tab-title");
+
+  tabTitle.textContent = "Menu";
 
   const bunBoHue = FoodInfoCard(Food.BunBoHue());
   const phoBoKho = FoodInfoCard(Food.PhoBoKho());
   const phoBo = FoodInfoCard(Food.PhoBo());
 
+  menuTab.appendChild(tabTitle);
   menuTab.appendChild(bunBoHue);
   menuTab.appendChild(phoBoKho);
   menuTab.appendChild(phoBo);
