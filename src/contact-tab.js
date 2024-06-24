@@ -65,7 +65,7 @@ const ContactTab = function () {
   phoneLink.setAttribute("href", "tel:123-456-7890");
 
   titleTab.textContent = "Contact Us";
-  message.textContent = `If you have any questions, feel free to reach out to us via email or phone, or use the contact form below.`;
+  message.textContent = `Want to book table? Feel free to reach out to us via email or phone, or use the contact form below.`;
   emailText.textContent = "Email: ";
   phoneText.textContent = "Phone: ";
   emailLink.textContent = "contact@vietnoodle.com";

@@ -145,7 +145,8 @@ body {
         width: 120px;
     }
 
-    header nav button:hover {
+    header nav button:hover, 
+    header nav button.active {
         background: var(--hover-background-black);
     }
 
@@ -178,6 +179,7 @@ body {
         display: flex;
         justify-content: center;
         gap: 2em;
+        margin-top: 20px;
     }
 
     .home-tab .extra-info .working-hrs,
@@ -193,7 +195,7 @@ body {
 
     .home-tab .text-box,
     .home-tab .extra-info {
-        padding: 0px 80px;
+        padding: 0px 60px;
     }
 
     .home-tab .extra-info p {
