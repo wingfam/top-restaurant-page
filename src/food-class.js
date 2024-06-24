@@ -20,7 +20,7 @@ function BunBoHue () {
       The noodles have a perfect texture from a blend of rice flour 
       and tapioca starch, while the beef comes in cuts like brisket 
       or tenderloin.`,
-    "45000"
+    "45.000"
   );
 };
 
