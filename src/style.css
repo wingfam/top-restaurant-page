@@ -2,7 +2,6 @@
     --background-black: #181a1b;
     --hover-background-black: #1b1d1e;
     --text-color-beige: #c2a072;
-    --logo-image: url("./restaurant-logo.jpg");
 }
 
 html,
@@ -117,6 +116,8 @@ body {
         align-items: center;
     }
 
+    /* HEADER */
+
     header {
         width: 100%;
         height: 50px;
@@ -149,9 +150,12 @@ body {
     }
 
     #content {
-        padding: 20px 30px 45px 30px;
+        padding: 20px 0px;
         text-align: center;
+        max-width: 600px;
     }
+
+    /* HOME TAB */
 
     .home-tab .home-image {
         width: 60%;
@@ -194,5 +198,42 @@ body {
 
     .home-tab .extra-info p {
         line-height: 20px;
+    }
+
+    /* MENU TAB */
+
+    .menu-tab .card-wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        text-align: start;
+        gap: 1em;
+        margin: 20px 0px;
+        position: relative;
+    }
+
+    .menu-tab .card-wrapper .food-img {
+        width: 220px;
+        height: 160px;
+    }
+
+    .menu-tab .card-wrapper .food-name {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 34px;
+    }
+
+    .menu-tab .card-wrapper .main-info .price {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .menu-tab .card-wrapper .main-info .price::before {
+        content: "Price: ";
+    }
+
+    .menu-tab .card-wrapper .main-info .price::after {
+        content: " VND";
     }
 }
